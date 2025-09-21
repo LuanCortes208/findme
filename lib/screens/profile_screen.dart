@@ -146,7 +146,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: AppBottomNavigationBar(currentIndex: 1),
+      bottomNavigationBar: AppBottomNavigationBar(currentIndex: 3),
     );
   }
 }

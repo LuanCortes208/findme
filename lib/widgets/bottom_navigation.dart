@@ -23,10 +23,10 @@ class AppBottomNavigationBar extends StatelessWidget {
 
         switch (index) {
           case 0: 
-            Navigator.pushReplacementNamed(context, '/lost_items');
+            Navigator.pushReplacementNamed(context, '/main');
             break;
           case 1: 
-            Navigator.pushReplacementNamed(context, '/lost_items');
+            Navigator.pushReplacementNamed(context, '/lost_item');
             break;
           case 2: 
             Navigator.pushReplacementNamed(context, '/sectors');

@@ -1,5 +1,6 @@
+import 'package:findme/screens/main_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:findme/screens/lost_items_screen.dart';
+
 
 void main() {
   runApp(const FindMeApp());
@@ -132,7 +133,7 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const LostItemsScreen()),
+                        MaterialPageRoute(builder: (context) => const MainScreen()),
                         );
                       },
                       child: const Text(

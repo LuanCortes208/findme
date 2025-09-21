@@ -116,7 +116,7 @@ class _SectorsScreenState extends State<SectorsScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: AppBottomNavigationBar(currentIndex: 1),
+      bottomNavigationBar: AppBottomNavigationBar(currentIndex: 2),
     );
   }
 }
