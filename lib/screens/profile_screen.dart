@@ -1,3 +1,4 @@
+import 'package:findme/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:findme/widgets/bottom_navigation.dart';
 
@@ -131,7 +132,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ElevatedButton.icon(
               icon: const Icon(Icons.logout),
               label: const Text('Logout'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginPage()),
+              );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
                 foregroundColor: Colors.white,
