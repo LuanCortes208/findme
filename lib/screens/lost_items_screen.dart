@@ -184,14 +184,7 @@ class _ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ItemDetailsScreen(item: item),
-          ),
-        );
-      },
+      onTap: () {},
       borderRadius: BorderRadius.circular(12), // Para o efeito de splash seguir a borda do card
       child: Card(
         color: Colors.white,
