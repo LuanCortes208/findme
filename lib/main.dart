@@ -8,7 +8,8 @@ import 'package:findme/screens/profile_screen.dart';
 import 'package:findme/screens/recuperar_senha.dart';
 import 'package:findme/screens/register_lost_item_screen.dart';
 import 'package:findme/screens/sectors_screen.dart';
-import 'package:findme/screens/main_screen.dart'; // Mude "findme" se necessário
+import 'package:findme/screens/splash_screen.dart';
+import 'package:findme/screens/main_screen.dart';
 
 void main() {
   runApp(const FindMeApp());
@@ -23,9 +24,10 @@ class FindMeApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Find me',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
-      initialRoute: '/login',
+      initialRoute: '/splash',
 
       routes: {
+        '/splash': (context) => const SplashScreen(),
         '/login': (context) => const LoginPage(),
         '/cadastro': (context) => const CadastroUsuarioPage(),
         '/main': (context) => const MainScreen(),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:findme/mock_items.dart';
 import 'package:findme/widgets/bottom_navigation.dart';
+import 'package:findme/screens/profile_screen.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -24,26 +25,24 @@ class MainScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Achei!',
+                  'Find Me!',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                 ),
                 Text(
                   'Itens Encontrados',
                   style: TextStyle(fontSize: 14, color: Colors.black54),
                 ),
-              ],
+                      ],
             ),
           ],
         ),
         actions: [
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.black38),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            margin: const EdgeInsets.all(8),
-            padding: const EdgeInsets.all(4),
-            child: const Icon(Icons.person, color: Colors.black),
+          IconButton(
+            icon: const Icon(Icons.person, color: Colors.black),
+            onPressed: () {
+              // Ação de navegar para a tela de perfil
+              Navigator.pushNamed(context, '/profile');
+            },
           ),
         ],
         bottom: PreferredSize(

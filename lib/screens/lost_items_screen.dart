@@ -148,7 +148,7 @@ class _Header extends StatelessWidget {
             MaterialPageRoute(builder: (context) => const ProfileScreen()),
           );
           },
-          icon: const Icon(Icons.person_outline, color: Colors.grey),
+          icon: const Icon(Icons.person, color: Colors.black),
         ),
       ],
     );
