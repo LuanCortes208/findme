@@ -10,6 +10,7 @@ import 'package:findme/screens/register_lost_item_screen.dart';
 import 'package:findme/screens/sectors_screen.dart';
 import 'package:findme/screens/splash_screen.dart';
 import 'package:findme/screens/main_screen.dart';
+import 'package:findme/screens/about_screen.dart';
 
 void main() {
   runApp(const FindMeApp());
@@ -38,6 +39,7 @@ class FindMeApp extends StatelessWidget {
         '/register_lost_item': (context) => const RegisterLostItemScreen(),
         '/detail': (context) => const ItemDetailScreen(),
         '/register': (context) => const RegisterItemScreen(),
+        '/about': (context) => const AboutScreen(),
       },
     );
   }
