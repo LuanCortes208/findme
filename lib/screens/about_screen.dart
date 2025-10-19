@@ -32,6 +32,7 @@ final teamMembers = [
     description: 'Ficou responsável pela programação e dar suporte ao time em suas atividades.',
     imagePath: 'assets/images/STK-20250921-WA0004.jpg', 
   ),
+
   const Developer(
     name: 'Katiane Ribeiro',
     course: 'Análise e Desenvolvimento de Sistemas',
@@ -40,6 +41,7 @@ final teamMembers = [
     description: 'Ficou responsável pela parte por programar, revisar o código e aprovar o envio.',
     imagePath: 'assets/images/STK-20250921-WA0002.jpg', 
   ),
+
   const Developer(
     name: 'Willian Santana',
     course: 'Análise e Desenvolvimento de Sistemas',
@@ -48,6 +50,7 @@ final teamMembers = [
     description: 'Ficou responsável por documentar e programar.',
     imagePath: 'assets/images/STK-20250921-WA0001.jpg', 
   ),
+  
   const Developer(
     name: 'Bianca Arielly',
     course: 'Análise e Desenvolvimento de Sistemas',
