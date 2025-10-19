@@ -114,6 +114,25 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 32),
 
+            // ADICIONE ESTE NOVO BOTÃO AQUI
+            ElevatedButton.icon(
+              icon: const Icon(Icons.info_outline),
+              label: const Text('Sobre o App'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/about');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.grey[700], // Cor diferente para distinguir
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 32),
+
             ElevatedButton.icon(
               icon: const Icon(Icons.edit),
               label: const Text('Editar Perfil'),
@@ -147,8 +166,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
-
-
+            const SizedBox(height: 12),
           ],
         ),
       ),
