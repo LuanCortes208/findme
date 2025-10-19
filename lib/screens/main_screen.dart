@@ -10,6 +10,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             Container(
@@ -169,7 +170,7 @@ class MainScreen extends StatelessWidget {
         onPressed: () {
           Navigator.pushNamed(context, '/register');
         },
-        backgroundColor: const Color(0xFF3F51B5),
+        backgroundColor: Colors.blue,
         child: const Icon(Icons.add, color: Colors.white),
       ),
       bottomNavigationBar: AppBottomNavigationBar(currentIndex: 0),

@@ -106,7 +106,7 @@ class _LostItemsScreenState extends State<LostItemsScreen> {
           MaterialPageRoute(builder: (context) => const RegisterLostItemScreen()),
         );
       },
-      child: const Icon(Icons.add),
+      child: const Icon(Icons.add, color: Colors.white),
       backgroundColor: Colors.blue,
       ),
       bottomNavigationBar: AppBottomNavigationBar(currentIndex: 1),
